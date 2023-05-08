@@ -13,13 +13,28 @@ export const Galaxy  = styled.div`
     width: 60%;
     height: 60%;
     outline-style: solid;
+    outline-color: white;
 `;
 
-export const Sun = styled.div`  
+
+export const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60%;
+    transform: scaleX(5);
+    outline-style: solid;
+    outline-color: white;
+
+`;
+
+
+export const Sun = styled.div`
     position: absolute;
-    width: 15vw;
-    height: 15vw;
-    transform: scaleX(0.2); 
+    width: 20vw;
+    height: 20vw;
+    transform: scaleX(0.2);
     border-radius: 50%;
     background-color: rgb(248, 244, 163);
     box-shadow: 0 0 60px rgb(253, 203, 163), 0 0 98px rgb(184, 160, 26) ;
@@ -31,58 +46,51 @@ export const Sun = styled.div`
 
 
 
-export const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 15%;
-    height: 100%;
-    transform: scaleX(5);  
-`;
-export const PlanetIndex = styled.div` 
+
+
+export const PlanetIndex = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    
-
-    animation: hidePlannet  5s infinite;
+    animation: hidePlannet  12s infinite;
 
     @keyframes hidePlannet {
         0% {
             z-index: -999;
         }
-        75% {
+        90% {
             z-index: 999;
         }
-        100% {
-            z-index: -999;
-        }       
-    }   
+    }
 `;
-export const PlanetContainer = styled.div` 
-    width: 1vw;
-    height: 1vw;
-
-    animation: correct 5s infinite linear;
+export const PlanetContainer = styled.div`
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    outline-color: white;
+    animation: correct 12s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
         }
         100% {
-            transform: rotateZ(0deg);    
+            transform: rotateZ(0deg);
         }
     }
-    
+
 `;
-export const Route = styled.div`  
+export const Route = styled.div`
     border-radius: 50%;
-    width: 4vw;
+    width: 6vw;
     height: 4vw;
     outline-style: solid;
-    animation: rotate 5s infinite linear;  
+    animation: rotate 12s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -91,7 +99,7 @@ export const Route = styled.div`
             transform: rotateZ(360deg);
         }
     }
-    
+
 
 `;
 export const PlanetMercury = styled.div`
@@ -105,9 +113,8 @@ export const PlanetMercury = styled.div`
     box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
     justify-content: center;
     slign-items: center;
-    transition: 0.10s;   
+    transition: 0.10s;
     transform: scaleX(0.2);
-
     .img {
         position: absolute;
         z-index: 1;
@@ -123,9 +130,12 @@ export const PlanetMercury = styled.div`
         }
         100% {
             background-position: 719px 0;
-        }     
-    }    
+        }
+    }
 `;
+
+
+
 
 
 
@@ -145,45 +155,58 @@ export const PlanetMercury = styled.div`
 export const Container2 = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 15%;
     height: 100%;
-    transform: scaleX(5);  
+    transform: scaleX(5);
 `;
-export const PlanetIndex2 = styled.div` 
+export const PlanetIndex2 = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    
-    animation: hidePlannet2  10s infinite;
+    animation: hidePlannet  12s infinite;
 
-    @keyframes hidePlannet2 {
+    @keyframes hidePlannet {
         0% {
             z-index: -999;
         }
-        25%{
-            z-index: 999;   
-        }
-        75% {
-            z-index: -999;
+        95% {
+            z-index: 999;
         }
         100% {
-            z-index: 999;
-        }   
-    }   
+            z-index: -999;
+        }
+    }
 `;
-export const Route2 = styled.div`  
-    border-radius: 50%;
-    width: 5vw;
-    height: 5vw;
+export const PlanetContainer2 = styled.div`
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     outline-style: solid;
-    animation: rotate 10s infinite linear;  
+    outline-color: white;
+    animation: correct 12s infinite linear;
+    @keyframes correct {
+        0% {
+            transform: rotateZ(360deg);
+        }
+        100% {
+            transform: rotateZ(0deg);
+        }
+    }
 
+`;
+export const Route2 = styled.div`
+    border-radius: 50%;
+    width: 8vw;
+    height: 6vw;
+    outline-style: solid;
+    animation: rotate 12s infinite linear;
     @keyframes rotate {
-
         0% {
             transform: rotateZ(0deg);
         }
@@ -191,27 +214,13 @@ export const Route2 = styled.div`
             transform: rotateZ(360deg);
         }
     }
-    
 
-`;
-export const PlanetContainer2 = styled.div` 
-    width: 2vw;
-    height: 2vw;
 
-    animation: correct 10s infinite linear;
-    @keyframes correct {
-        0% {
-            transform: rotateZ(360deg);
-        }
-        100% {
-            transform: rotateZ(0deg);    
-        }
-    }  
 `;
 export const PlanetVenus = styled.div`
     display: flex;
-    width: 2vw;
-    height: 2vw;
+    width: 3vw;
+    height: 3vw;
     background-color #03045E;
     background-image: url(${Venus});
     background-size: cover;
@@ -219,24 +228,25 @@ export const PlanetVenus = styled.div`
     box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
     justify-content: center;
     slign-items: center;
-    transition: 0.10s;   
+    transition: 0.10s;
     transform: scaleX(0.2);
-
     .img {
         position: absolute;
         z-index: 1;
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 45s infinite linear;
+
+    animation: animate 30s infinite linear;
+
     @keyframes animate {
         0% {
             background-position: 0 50;
         }
         100% {
             background-position: 719px 0;
-        }     
-    }      
+        }
+    }
 `;
 
 
@@ -261,16 +271,16 @@ export const PlanetVenus = styled.div`
 export const Container3 = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 15%;
     height: 100%;
-    transform: scaleX(5);  
+    transform: scaleX(5);
     outline-style: solid;
     outline-color: white;
 `;
 
 
-export const PlanetIndex3 = styled.div` 
+export const PlanetIndex3 = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
@@ -279,32 +289,25 @@ export const PlanetIndex3 = styled.div`
     width: 100%;
     outline-style: solid;
     outline-color: white;
-    
+    animation: hidePlannet2  25s infinite;
 
-    animation: hidePlannet2  20s infinite;
 
-    @keyframes hidePlannet2 {
+    @keyframes hidePlannet {
         0% {
             z-index: -999;
         }
-        65% {
+        85% {
             z-index: 999;
         }
-        70% {
-            z-index: -999;
-        }
-        100% {
-            z-index: -999;
-        }    
-    }   
+    }
 `;
-export const Route3 = styled.div` 
+export const Route3 = styled.div`
     border-radius: 50%;
     width: 8vw;
     height: 8vw;
     outline-style: solid;
     outline-color: white;
-    animation: rotate 20s infinite linear;  
+    animation: rotate 20s infinite linear;
 
     @keyframes rotate {
 
@@ -317,7 +320,7 @@ export const Route3 = styled.div`
     }
 `;
 
-export const PlanetContainer3 = styled.div` 
+export const PlanetContainer3 = styled.div`
     width: 4vw;
     height: 4vw;
     outline-style: solid;
@@ -329,10 +332,10 @@ export const PlanetContainer3 = styled.div`
             transform: rotateZ(360deg);
         }
         100% {
-            transform: rotateZ(0deg);    
+            transform: rotateZ(0deg);
         }
     }
-    
+
 `;
 export const PlanetEarth = styled.div`
     display: flex;
@@ -345,7 +348,7 @@ export const PlanetEarth = styled.div`
     box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
     justify-content: center;
     slign-items: center;
-    transition: 0.10s;   
+    transition: 0.10s;
     transform: scaleX(0.2);
 
     .img {
@@ -363,8 +366,8 @@ export const PlanetEarth = styled.div`
         }
         100% {
             background-position: 719px 0;
-        }     
-    } 
+        }
+    }
 `;
 
 
@@ -381,16 +384,16 @@ export const PlanetEarth = styled.div`
 export const Container4 = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 15%;
     height: 100%;
-    transform: scaleX(5);  
+    transform: scaleX(5);
     outline-style: solid;
     outline-color: white;
 `;
 
 
-export const PlanetIndex4 = styled.div` 
+export const PlanetIndex4 = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
@@ -399,7 +402,7 @@ export const PlanetIndex4 = styled.div`
     width: 100%;
     outline-style: solid;
     outline-color: white;
-    
+
 
     animation: hidePlannet2  20s infinite;
 
@@ -415,16 +418,16 @@ export const PlanetIndex4 = styled.div`
         }
         100% {
             z-index: -999;
-        }    
-    }   
+        }
+    }
 `;
-export const Route4 = styled.div` 
+export const Route4 = styled.div`
     border-radius: 50%;
     width: 10vw;
     height: 10vw;
     outline-style: solid;
     outline-color: white;
-    animation: rotate 20s infinite linear;  
+    animation: rotate 20s infinite linear;
 
     @keyframes rotate {
 
@@ -437,7 +440,7 @@ export const Route4 = styled.div`
     }
 `;
 
-export const PlanetContainer4 = styled.div` 
+export const PlanetContainer4 = styled.div`
     width: 3vw;
     height: 3vw;
     outline-style: solid;
@@ -449,10 +452,10 @@ export const PlanetContainer4 = styled.div`
             transform: rotateZ(360deg);
         }
         100% {
-            transform: rotateZ(0deg);    
+            transform: rotateZ(0deg);
         }
     }
-    
+
 `;
 export const PlanetMars = styled.div`
     display: flex;
@@ -465,7 +468,7 @@ export const PlanetMars = styled.div`
     box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
     justify-content: center;
     slign-items: center;
-    transition: 0.10s;   
+    transition: 0.10s;
     transform: scaleX(0.2);
 
     .img {
@@ -483,126 +486,18 @@ export const PlanetMars = styled.div`
         }
         100% {
             background-position: 719px 0;
-        }     
-    } 
-`;
-
-
-
-
-
-
-
-
-
-export const Container5 = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 15%;
-    height: 100%;
-    transform: scaleX(5);  
-    outline-style: solid;
-    outline-color: white;
-`;
-
-
-export const PlanetIndex5 = styled.div` 
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    outline-style: solid;
-    outline-color: white;
-    
-
-    animation: hidePlannet2  20s infinite;
-
-    @keyframes hidePlannet2 {
-        0% {
-            z-index: -999;
-        }
-        65% {
-            z-index: 999;
-        }
-        70% {
-            z-index: -999;
-        }
-        100% {
-            z-index: -999;
-        }    
-    }   
-`;
-export const Route5 = styled.div` 
-    border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    outline-style: solid;
-    outline-color: white;
-    animation: rotate 20s infinite linear;  
-
-    @keyframes rotate {
-
-        0% {
-            transform: rotateZ(0deg);
-        }
-        100% {
-            transform: rotateZ(360deg);
         }
     }
 `;
 
-export const PlanetContainer5 = styled.div` 
-    width: 5vw;
-    height: 5vw;
-    outline-style: solid;
-    outline-color: white;
 
-    animation: correct 20s infinite linear;
-    @keyframes correct {
-        0% {
-            transform: rotateZ(360deg);
-        }
-        100% {
-            transform: rotateZ(0deg);    
-        }
-    }
-    
-`;
-export const PlanetJupiter = styled.div`
-    display: flex;
-    width: 5vw;
-    height:  5vw;
-    background-color #03045E;
-    background-image: url(${Jupiter});
-    background-size: cover;
-    border-radius: 50%;
-    box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    slign-items: center;
-    transition: 0.10s;   
-    transform: scaleX(0.2);
 
-    .img {
-        position: absolute;
-        z-index: 1;
-        transition: 0.5s;
-        pointer-events: nome;
-    }
 
-    animation: animate 70s infinite linear;
 
-    @keyframes animate {
-        0% {
-            background-position: 0 50;
-        }
-        100% {
-            background-position: 719px 0;
-        }     
-    } 
-`;
+
+
+
+
 
 
 
