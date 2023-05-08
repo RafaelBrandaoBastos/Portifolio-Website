@@ -2,7 +2,9 @@ import React from "react";
 import {Galaxy, Container, Sun, PlanetVenus, 
 Route, PlanetContainer, PlanetIndex, PlanetIndex2, 
 PlanetContainer2, PlanetMercury, Route2, PlanetIndex3, 
-PlanetEarth, Route3, PlanetContainer3} from "./style";
+PlanetEarth, Route3, PlanetContainer3, PlanetMars, 
+Route4, PlanetContainer4, PlanetIndex4, PlanetJupiter, 
+Route5, PlanetContainer5, PlanetIndex5} from "./style";
 
 const GalaxyComponent = ({ }) => {
 
@@ -29,10 +31,12 @@ const GalaxyComponent = ({ }) => {
                 <PlanetIndex3>
                     <Route3>
                         <PlanetContainer3>
-                            <PlanetEarth />     
+                            <PlanetEarth/>     
                         </PlanetContainer3>
                     </Route3>
                 </PlanetIndex3>
+                
+                 
             </Container>                     
         </Galaxy>
     );
