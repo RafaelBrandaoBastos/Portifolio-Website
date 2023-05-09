@@ -71,8 +71,8 @@ export const PlanetIndex = styled.div`
     }
 `;
 export const Route = styled.div`
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 2.8vw;
+    height: 2.8vw;
     animation: rotate 6s infinite linear;
     @keyframes rotate {
         0% {
@@ -85,8 +85,8 @@ export const Route = styled.div`
 `;
 export const RouteInner = styled.div`
     border-radius: 50%;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 2.5vw;
+    height: 2.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     outline-color: white;
     position: absolute;
@@ -179,8 +179,8 @@ export const PlanetIndex2 = styled.div`
     }
 `;
 export const Route2 = styled.div`
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     animation: rotate 10s infinite linear;
     @keyframes rotate {
         0% {
@@ -193,8 +193,8 @@ export const Route2 = styled.div`
 `;
 export const RouteInner2 = styled.div`
     border-radius: 50%;
-    width: 5vw;
-    height: 5vw;
+    width: 3.5vw;
+    height: 3.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 6s infinite linear;
@@ -289,8 +289,8 @@ export const PlanetIndex3 = styled.div`
     }
 `;
 export const Route3 = styled.div`
-    width: 7vw;
-    height: 7vw;
+    width: 5vw;
+    height: 5vw;
     animation: rotate 30s infinite linear;
     @keyframes rotate {
         0% {
@@ -303,8 +303,8 @@ export const Route3 = styled.div`
 `;
 export const RouteInner3 = styled.div`
     border-radius: 50%;
-    width: 7vw;
-    height: 7vw;
+    width: 4.5vw;
+    height: 4.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 90s infinite linear;
@@ -397,8 +397,8 @@ export const PlanetIndex4 = styled.div`
 `;
 export const Route4 = styled.div`
     border-radius: 50%;
-    width: 8.5vw;
-    height: 8.5vw;
+    width: 6vw;
+    height: 6vw;
     animation: rotate 45s infinite linear;
     @keyframes rotate {
         0% {
@@ -411,8 +411,8 @@ export const Route4 = styled.div`
 `;
 export const RouteInner4 = styled.div`
     border-radius: 50%;
-    width: 9vw;
-    height: 9vw;
+    width: 5.5vw;
+    height: 5.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 45s infinite linear;
@@ -503,8 +503,8 @@ export const PlanetIndex5 = styled.div`
 `;
 export const Route5 = styled.div`
     border-radius: 50%;
-    width: 10.5vw;
-    height: 10.5vw;
+    width: 7vw;
+    height: 7vw;
     animation: rotate 60s infinite linear;
     @keyframes rotate {
         0% {
@@ -517,8 +517,8 @@ export const Route5 = styled.div`
 `;
 export const RouteInner5 = styled.div`
     border-radius: 50%;
-    width: 11vw;
-    height: 11vw;
+    width: 6.5vw;
+    height: 6.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 60s infinite linear;
@@ -604,8 +604,8 @@ export const PlanetIndex6 = styled.div`
     }
 `;
 export const Route6 = styled.div`
-    width: 11.5vw;
-    height: 11.5vw;
+    width: 8vw;
+    height: 8vw;
     animation: rotate 70s infinite linear;
     @keyframes rotate {
         0% {
@@ -618,8 +618,8 @@ export const Route6 = styled.div`
 `;
 export const RouteInner6 = styled.div`
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
+    width: 7.5vw;
+    height: 7.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 70s infinite linear;
@@ -707,8 +707,8 @@ export const PlanetIndex7 = styled.div`
     }
 `;
 export const Route7 = styled.div`
-    width: 11.5vw;
-    height: 11.5vw;
+    width: 9vw;
+    height: 9vw;
     animation: rotate 70s infinite linear;
     @keyframes rotate {
         0% {
@@ -721,8 +721,8 @@ export const Route7 = styled.div`
 `;
 export const RouteInner7 = styled.div`
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
+    width: 8.5vw;
+    height: 8.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 70s infinite linear;
@@ -841,6 +841,7 @@ export const Route8 = styled.div`
     }
 `;
 export const RouteInner8 = styled.div`
+    border-radius: 50%;
     width: 13vw;
     height: 13vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
