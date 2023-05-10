@@ -15,7 +15,10 @@ export const Galaxy  = styled.div`
     width: 90%;
     height: 60%;
     outline-style: solid;
-    outline-color: red;
+    outline-color: green;
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `;
 
 export const Container = styled.div`
@@ -27,6 +30,9 @@ export const Container = styled.div`
     transform: scaleX(5);
     outline-style: solid;
     outline-color: red;
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `;
 
 export const Sun = styled.div`
@@ -179,8 +185,8 @@ export const PlanetIndex2 = styled.div`
     }
 `;
 export const Route2 = styled.div`
-    width: 4vw;
-    height: 4vw;
+    width: 3.9vw;
+    height: 3.9vw;
     animation: rotate 10s infinite linear;
     @keyframes rotate {
         0% {
@@ -289,8 +295,8 @@ export const PlanetIndex3 = styled.div`
     }
 `;
 export const Route3 = styled.div`
-    width: 5vw;
-    height: 5vw;
+    width: 5.9vw;
+    height: 5.9vw;
     animation: rotate 30s infinite linear;
     @keyframes rotate {
         0% {
@@ -303,8 +309,8 @@ export const Route3 = styled.div`
 `;
 export const RouteInner3 = styled.div`
     border-radius: 50%;
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 5.5vw;
+    height: 5.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 90s infinite linear;
@@ -397,8 +403,8 @@ export const PlanetIndex4 = styled.div`
 `;
 export const Route4 = styled.div`
     border-radius: 50%;
-    width: 6vw;
-    height: 6vw;
+    width: 6.9vw;
+    height: 6.9vw;
     animation: rotate 45s infinite linear;
     @keyframes rotate {
         0% {
@@ -411,8 +417,8 @@ export const Route4 = styled.div`
 `;
 export const RouteInner4 = styled.div`
     border-radius: 50%;
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 7.5vw;
+    height: 7.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 45s infinite linear;
@@ -426,8 +432,8 @@ export const RouteInner4 = styled.div`
     }
 `;
 export const PlanetContainer4 = styled.div`
-    width: 2vw;
-    height: 2vw;
+    width: 1.6vw;
+    height: 1.6vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,8 +449,8 @@ export const PlanetContainer4 = styled.div`
 `;
 export const PlanetMars = styled.div`
     display: flex;
-    width: 2vw;
-    height: 2vw;
+    width: 1.6vw;
+    height: 1.6vw;
     background-color #03045E;
     background-image: url(${Mars});
     background-size: cover;
@@ -503,8 +509,8 @@ export const PlanetIndex5 = styled.div`
 `;
 export const Route5 = styled.div`
     border-radius: 50%;
-    width: 7vw;
-    height: 7vw;
+    width: 9.2vw;
+    height: 9.2vw;
     animation: rotate 60s infinite linear;
     @keyframes rotate {
         0% {
@@ -517,8 +523,8 @@ export const Route5 = styled.div`
 `;
 export const RouteInner5 = styled.div`
     border-radius: 50%;
-    width: 6.5vw;
-    height: 6.5vw;
+    width: 9.5vw;
+    height: 9.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 60s infinite linear;
@@ -532,8 +538,8 @@ export const RouteInner5 = styled.div`
     }
 `;
 export const PlanetContainer5 = styled.div`
-    width: 3vw;
-    height: 3vw;
+    width: 2.5vw;
+    height: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -549,8 +555,8 @@ export const PlanetContainer5 = styled.div`
 `;
 export const PlanetJupiter = styled.div`
     display: flex;
-    width: 3vw;
-    height: 3vw;
+    width: 2.5vw;
+    height: 2.5vw;
     background-color #03045E;
     background-image: url(${Jupiter});
     background-size: cover;
@@ -604,8 +610,8 @@ export const PlanetIndex6 = styled.div`
     }
 `;
 export const Route6 = styled.div`
-    width: 8vw;
-    height: 8vw;
+    width: 10.2vw;
+    height: 10.2vw;
     animation: rotate 70s infinite linear;
     @keyframes rotate {
         0% {
@@ -618,8 +624,8 @@ export const Route6 = styled.div`
 `;
 export const RouteInner6 = styled.div`
     border-radius: 50%;
-    width: 7.5vw;
-    height: 7.5vw;
+    width: 11.5vw;
+    height: 11.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 70s infinite linear;
@@ -633,8 +639,8 @@ export const RouteInner6 = styled.div`
     }
 `;
 export const PlanetContainer6 = styled.div`
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.2vw;
+    height: 2.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -650,8 +656,8 @@ export const PlanetContainer6 = styled.div`
 `;
 export const PlanetSaturn = styled.div`
     display: flex;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.2vw;
+    height: 2.2vw;
     background-color #03045E;
     background-image: url(${Saturn});
     background-size: cover;
@@ -707,8 +713,8 @@ export const PlanetIndex7 = styled.div`
     }
 `;
 export const Route7 = styled.div`
-    width: 9vw;
-    height: 9vw;
+    width: 11.6vw;
+    height: 11.6vw;
     animation: rotate 70s infinite linear;
     @keyframes rotate {
         0% {
@@ -721,8 +727,8 @@ export const Route7 = styled.div`
 `;
 export const RouteInner7 = styled.div`
     border-radius: 50%;
-    width: 8.5vw;
-    height: 8.5vw;
+    width: 13.5vw;
+    height: 13.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 70s infinite linear;
@@ -736,8 +742,8 @@ export const RouteInner7 = styled.div`
     }
 `;
 export const PlanetContainer7 = styled.div`
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -753,8 +759,8 @@ export const PlanetContainer7 = styled.div`
 `;
 export const PlanetUranus = styled.div`
     display: flex;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
     background-color #03045E;
     background-image: url(${Uranus});
     background-size: cover;
@@ -828,8 +834,8 @@ export const PlanetIndex8 = styled.div`
     }
 `;
 export const Route8 = styled.div`
-    width: 11.5vw;
-    height: 11.5vw;
+    width: 13vw;
+    height: 13vw;
     animation: rotate 90s infinite linear;
     @keyframes rotate {
         0% {
@@ -842,8 +848,8 @@ export const Route8 = styled.div`
 `;
 export const RouteInner8 = styled.div`
     border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
+    width: 16vw;
+    height: 16vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 90s infinite linear;
