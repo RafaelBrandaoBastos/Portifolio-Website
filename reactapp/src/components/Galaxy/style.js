@@ -16,9 +16,7 @@ export const Galaxy  = styled.div`
     height: 60%;
     outline-style: solid;
     outline-color: green;
-    @media (max-width: 1000px) {
-        width: 100%;
-    }
+
 `;
 
 export const Container = styled.div`
@@ -30,9 +28,6 @@ export const Container = styled.div`
     transform: scaleX(5);
     outline-style: solid;
     outline-color: red;
-    @media (max-width: 1000px) {
-        width: 100%;
-    }
 `;
 
 export const Sun = styled.div`
@@ -60,7 +55,7 @@ export const PlanetIndex = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  6s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -77,9 +72,9 @@ export const PlanetIndex = styled.div`
     }
 `;
 export const Route = styled.div`
-    width: 2.8vw;
-    height: 2.8vw;
-    animation: rotate 6s infinite linear;
+    width: 2.7vw;
+    height: 2.7vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -96,7 +91,7 @@ export const RouteInner = styled.div`
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     outline-color: white;
     position: absolute;
-    animation: rotate 6s infinite linear;
+    animation: rotate 20s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -112,7 +107,7 @@ export const PlanetContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 6s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -141,7 +136,7 @@ export const PlanetMercury = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 30s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -168,7 +163,7 @@ export const PlanetIndex2 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  10s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: 999;
@@ -185,9 +180,9 @@ export const PlanetIndex2 = styled.div`
     }
 `;
 export const Route2 = styled.div`
-    width: 3.9vw;
-    height: 3.9vw;
-    animation: rotate 10s infinite linear;
+    width: 3.8vw;
+    height: 3.8vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -219,7 +214,7 @@ export const PlanetContainer2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 10s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -248,7 +243,7 @@ export const PlanetVenus = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 30s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -278,7 +273,7 @@ export const PlanetIndex3 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  30s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -295,9 +290,9 @@ export const PlanetIndex3 = styled.div`
     }
 `;
 export const Route3 = styled.div`
-    width: 5.9vw;
-    height: 5.9vw;
-    animation: rotate 30s infinite linear;
+    width: 5.1vw;
+    height: 5.1vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -309,11 +304,11 @@ export const Route3 = styled.div`
 `;
 export const RouteInner3 = styled.div`
     border-radius: 50%;
-    width: 5.5vw;
-    height: 5.5vw;
+    width: 4.6vw;
+    height: 4.6vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 90s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -329,7 +324,7 @@ export const PlanetContainer3 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 30s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -358,7 +353,7 @@ export const PlanetEarth = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 20s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -385,7 +380,7 @@ export const PlanetIndex4 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  45s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -403,9 +398,9 @@ export const PlanetIndex4 = styled.div`
 `;
 export const Route4 = styled.div`
     border-radius: 50%;
-    width: 6.9vw;
-    height: 6.9vw;
-    animation: rotate 45s infinite linear;
+    width: 5.8vw;
+    height: 5.8vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -417,11 +412,11 @@ export const Route4 = styled.div`
 `;
 export const RouteInner4 = styled.div`
     border-radius: 50%;
-    width: 7.5vw;
-    height: 7.5vw;
+    width: 6vw;
+    height: 6vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 45s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -437,7 +432,7 @@ export const PlanetContainer4 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 45s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -466,7 +461,7 @@ export const PlanetMars = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 100s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -491,7 +486,7 @@ export const PlanetIndex5 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  60s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -509,9 +504,9 @@ export const PlanetIndex5 = styled.div`
 `;
 export const Route5 = styled.div`
     border-radius: 50%;
-    width: 9.2vw;
-    height: 9.2vw;
-    animation: rotate 60s infinite linear;
+    width: 7.7vw;
+    height: 7.7vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -523,11 +518,11 @@ export const Route5 = styled.div`
 `;
 export const RouteInner5 = styled.div`
     border-radius: 50%;
-    width: 9.5vw;
-    height: 9.5vw;
+    width: 7.7vw;
+    height: 7.7vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 60s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -543,7 +538,7 @@ export const PlanetContainer5 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 60s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -572,7 +567,7 @@ export const PlanetJupiter = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 10s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -593,7 +588,7 @@ export const PlanetIndex6 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  70s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -610,9 +605,9 @@ export const PlanetIndex6 = styled.div`
     }
 `;
 export const Route6 = styled.div`
-    width: 10.2vw;
-    height: 10.2vw;
-    animation: rotate 70s infinite linear;
+    width: 9vw;
+    height: 9vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -624,11 +619,11 @@ export const Route6 = styled.div`
 `;
 export const RouteInner6 = styled.div`
     border-radius: 50%;
-    width: 11.5vw;
-    height: 11.5vw;
+    width: 9.7vw;
+    height: 9.7vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 70s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -644,7 +639,7 @@ export const PlanetContainer6 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 70s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -673,7 +668,7 @@ export const PlanetSaturn = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 5s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -696,7 +691,7 @@ export const PlanetIndex7 = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: hidePlannet  70s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -713,9 +708,9 @@ export const PlanetIndex7 = styled.div`
     }
 `;
 export const Route7 = styled.div`
-    width: 11.6vw;
-    height: 11.6vw;
-    animation: rotate 70s infinite linear;
+    width: 10.5vw;
+    height: 10.5vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -727,11 +722,11 @@ export const Route7 = styled.div`
 `;
 export const RouteInner7 = styled.div`
     border-radius: 50%;
-    width: 13.5vw;
-    height: 13.5vw;
+    width: 12vw;
+    height: 12vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 70s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -747,7 +742,7 @@ export const PlanetContainer7 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 70s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -776,7 +771,7 @@ export const PlanetUranus = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 5s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;
@@ -817,7 +812,7 @@ export const PlanetIndex8 = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    animation: hidePlannet  90s infinite;
+    animation: hidePlannet  15s infinite;
     @keyframes hidePlannet {
         0% {
             z-index: -999;
@@ -834,9 +829,9 @@ export const PlanetIndex8 = styled.div`
     }
 `;
 export const Route8 = styled.div`
-    width: 13vw;
-    height: 13vw;
-    animation: rotate 90s infinite linear;
+    width: 11.9vw;
+    height: 11.9vw;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -848,11 +843,11 @@ export const Route8 = styled.div`
 `;
 export const RouteInner8 = styled.div`
     border-radius: 50%;
-    width: 16vw;
-    height: 16vw;
+    width: 14vw;
+    height: 14vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
-    animation: rotate 90s infinite linear;
+    animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -869,7 +864,7 @@ export const PlanetContainer8 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: correct 90s infinite linear;
+    animation: correct 15s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
@@ -898,7 +893,7 @@ export const PlanetNeptune = styled.div`
         transition: 0.5s;
         pointer-events: nome;
     }
-    animation: animate 65s infinite linear;
+    animation: animate 15s infinite linear;
     @keyframes animate {
         0% {
             background-position: 0 50;

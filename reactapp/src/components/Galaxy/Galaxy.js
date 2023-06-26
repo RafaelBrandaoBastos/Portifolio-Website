@@ -73,7 +73,7 @@ const GalaxyComponent = ({ }) => {
                     </Route7>
                 </PlanetIndex7>
                 <PlanetIndex8>
-
+                    <RouteInner8 />
                     <Route8>
                             <PlanetContainer8>
                                 <PlanetNeptune/>
