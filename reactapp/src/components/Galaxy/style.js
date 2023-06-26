@@ -5,8 +5,10 @@ import Mercury from "../../assets/Mercury.png";
 import Mars from "../../assets/Mars.png";
 import Jupiter from "../../assets/Jupiter.png";
 import Saturn from "../../assets/Saturn.png";
+import Rings from "../../assets/Rings.png";
 import Uranus from "../../assets/Uranus.png";
 import Neptune from "../../assets/Neptune.png";
+import MoonPng from "../../assets/Moon.png";
 
 export const Galaxy  = styled.div`
     display: flex;
@@ -72,8 +74,8 @@ export const PlanetIndex = styled.div`
     }
 `;
 export const Route = styled.div`
-    width: 2.7vw;
-    height: 2.7vw;
+    width: 2.3vw;
+    height: 2.3vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -102,8 +104,8 @@ export const RouteInner = styled.div`
     }
 `;
 export const PlanetContainer = styled.div`
-    width: 1vw;
-    height: 1vw;
+    width: .5vw;
+    height: .5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,8 +121,8 @@ export const PlanetContainer = styled.div`
 `;
 export const PlanetMercury = styled.div`
     display: flex;
-    width: 1vw;
-    height: 1vw;
+    width: .5vw;
+    height: .5vw;
     background-color #03045E;
     background-image: url(${Mercury});
     background-size: cover;
@@ -180,8 +182,8 @@ export const PlanetIndex2 = styled.div`
     }
 `;
 export const Route2 = styled.div`
-    width: 3.8vw;
-    height: 3.8vw;
+    width: 3.2vw;
+    height: 3.2vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -209,8 +211,8 @@ export const RouteInner2 = styled.div`
     }
 `;
 export const PlanetContainer2 = styled.div`
-    width: 1.5vw;
-    height: 1.5vw;
+    width: .7vw;
+    height: .7vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,8 +228,8 @@ export const PlanetContainer2 = styled.div`
 `;
 export const PlanetVenus = styled.div`
     display: flex;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: .7vw;
+    height: .7vw;
     background-color #03045E;
     background-image: url(${Venus});
     background-size: cover;
@@ -290,8 +292,8 @@ export const PlanetIndex3 = styled.div`
     }
 `;
 export const Route3 = styled.div`
-    width: 5.1vw;
-    height: 5.1vw;
+    width: 4.65vw;
+    height: 4.65vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -304,8 +306,8 @@ export const Route3 = styled.div`
 `;
 export const RouteInner3 = styled.div`
     border-radius: 50%;
-    width: 4.6vw;
-    height: 4.6vw;
+    width: 4.5vw;
+    height: 4.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 15s infinite linear;
@@ -319,8 +321,8 @@ export const RouteInner3 = styled.div`
     }
 `;
 export const PlanetContainer3 = styled.div`
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,8 +338,8 @@ export const PlanetContainer3 = styled.div`
 `;
 export const PlanetEarth = styled.div`
     display: flex;
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     background-color #03045E;
     background-image: url(${Earth});
     background-size: cover;
@@ -364,6 +366,81 @@ export const PlanetEarth = styled.div`
     }
 `;
 
+
+
+
+
+
+
+export const RouteMoon = styled.div`
+    width: .9vw;
+    height: .9vw;
+    position: absolute;
+    animation: rotate 15s infinite linear;
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+        }
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+`;
+export const RouteInnerMoon = styled.div`
+    border-radius: 50%;
+    width: .5vw;
+    height: .5vw;
+    border: 1.0px solid rgba(256, 256, 256, 0.2);
+    position: absolute;
+    animation: rotate 5s infinite linear;
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(0deg);
+        }
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+`;
+export const PlanetContainerMoon = styled.div`
+    width: .5vw;
+    height: .5vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    animation: correct 15s infinite linear;
+    @keyframes correct {
+        0% {
+            transform: rotateZ(360deg);
+        }
+        100% {
+            transform: rotateZ(0deg);
+        }
+    }
+`;
+export const Moon = styled.div`
+    display: flex;
+    width: .5vw;
+    height: .5vw;
+    background-color #03045E;
+    background-image: url(${MoonPng});
+    background-size: cover;
+    border-radius: 50%;
+    box shadow: 0 0 50px rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    slign-items: center;
+    transition: 0.10s;
+    transform: scaleX(0.2);
+    .img {
+        position: absolute;
+        z-index: 1;
+        transition: 0.5s;
+        pointer-events: nome;
+    }
+
+`;
 
 
 
@@ -398,8 +475,8 @@ export const PlanetIndex4 = styled.div`
 `;
 export const Route4 = styled.div`
     border-radius: 50%;
-    width: 5.8vw;
-    height: 5.8vw;
+    width: 5.4vw;
+    height: 5.4vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -427,8 +504,8 @@ export const RouteInner4 = styled.div`
     }
 `;
 export const PlanetContainer4 = styled.div`
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 1.2vw;
+    height: 1.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,8 +521,8 @@ export const PlanetContainer4 = styled.div`
 `;
 export const PlanetMars = styled.div`
     display: flex;
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 1.2vw;
+    height: 1.2vw;
     background-color #03045E;
     background-image: url(${Mars});
     background-size: cover;
@@ -504,8 +581,8 @@ export const PlanetIndex5 = styled.div`
 `;
 export const Route5 = styled.div`
     border-radius: 50%;
-    width: 7.7vw;
-    height: 7.7vw;
+    width: 8.2vw;
+    height: 8.2vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -518,8 +595,8 @@ export const Route5 = styled.div`
 `;
 export const RouteInner5 = styled.div`
     border-radius: 50%;
-    width: 7.7vw;
-    height: 7.7vw;
+    width: 8vw;
+    height: 8vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 15s infinite linear;
@@ -581,6 +658,13 @@ export const PlanetJupiter = styled.div`
 
 
 
+
+
+
+
+
+
+
 export const PlanetIndex6 = styled.div`
     position: absolute;
     display: flex;
@@ -605,8 +689,9 @@ export const PlanetIndex6 = styled.div`
     }
 `;
 export const Route6 = styled.div`
-    width: 9vw;
-    height: 9vw;
+    width: 9.1vw;
+    height: 9.1vw;
+    position: absolute;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -619,8 +704,8 @@ export const Route6 = styled.div`
 `;
 export const RouteInner6 = styled.div`
     border-radius: 50%;
-    width: 9.7vw;
-    height: 9.7vw;
+    width: 10vw;
+    height: 10vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 15s infinite linear;
@@ -634,8 +719,9 @@ export const RouteInner6 = styled.div`
     }
 `;
 export const PlanetContainer6 = styled.div`
-    width: 2.2vw;
-    height: 2.2vw;
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,8 +737,8 @@ export const PlanetContainer6 = styled.div`
 `;
 export const PlanetSaturn = styled.div`
     display: flex;
-    width: 2.2vw;
-    height: 2.2vw;
+    width: 2vw;
+    height: 2vw;
     background-color #03045E;
     background-image: url(${Saturn});
     background-size: cover;
@@ -684,6 +770,30 @@ export const PlanetSaturn = styled.div`
 
 
 
+
+export const RouteInnerRing = styled.div`
+    border-radius: 50%;
+    width: .7vw;
+    height: .7vw;
+    position: absolute;
+    background-image: url(${Rings});
+    background-size: cover;
+    opacity: 0.4;
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const PlanetIndex7 = styled.div`
     position: absolute;
     display: flex;
@@ -708,8 +818,8 @@ export const PlanetIndex7 = styled.div`
     }
 `;
 export const Route7 = styled.div`
-    width: 10.5vw;
-    height: 10.5vw;
+    width: 10.2vw;
+    height: 10.2vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -737,8 +847,8 @@ export const RouteInner7 = styled.div`
     }
 `;
 export const PlanetContainer7 = styled.div`
-    width: 2vw;
-    height: 2vw;
+    width: 1.8vw;
+    height: 1.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,8 +864,8 @@ export const PlanetContainer7 = styled.div`
 `;
 export const PlanetUranus = styled.div`
     display: flex;
-    width: 2vw;
-    height: 2vw;
+    width: 1.8vw;
+    height: 1.8vw;
     background-color #03045E;
     background-image: url(${Uranus});
     background-size: cover;
@@ -829,8 +939,8 @@ export const PlanetIndex8 = styled.div`
     }
 `;
 export const Route8 = styled.div`
-    width: 11.9vw;
-    height: 11.9vw;
+    width: 11.6vw;
+    height: 11.6vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -859,8 +969,8 @@ export const RouteInner8 = styled.div`
 `;
 
 export const PlanetContainer8 = styled.div`
-    width: 2vw;
-    height: 2vw;
+    width: 1.7vw;
+    height: 1.7vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -876,8 +986,8 @@ export const PlanetContainer8 = styled.div`
 `;
 export const PlanetNeptune = styled.div`
     display: flex;
-    width: 2vw;
-    height: 2vw;
+    width: 1.7vw;
+    height: 1.7vw;
     background-color #03045E;
     background-image: url(${Neptune});
     background-size: cover;

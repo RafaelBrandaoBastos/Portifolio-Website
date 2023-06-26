@@ -8,7 +8,6 @@ import GalaxyComponent from "../Galaxy/Galaxy";
 
 const PageComponent = ({ }) => {
 
-
     return (
         <Container>
             <GalaxyComponent style={{transform: "scale(0.01)"}}/>
