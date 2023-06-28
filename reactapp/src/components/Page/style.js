@@ -21,5 +21,4 @@ export const Container = styled.div`
         }
     }
 
-    @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
 `;
