@@ -1,12 +1,11 @@
 import React from "react";
 import {useContext} from "react";
 import {Card, Container} from "./style";
-import {TabsContext} from "../../contexts/TabsProvider";
 import GalaxyComponent from "../Galaxy/Galaxy";
 
 
 
-const PageComponent = ({ }) => {
+const Home = ({ }) => {
 
 
     return (
@@ -16,4 +15,4 @@ const PageComponent = ({ }) => {
     );
 };
 
-export default PageComponent;
+export default Home;

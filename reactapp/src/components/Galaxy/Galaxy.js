@@ -53,11 +53,7 @@ import {
 const GalaxyComponent = ({}) => {
   return (
     <Galaxy>
-      <Container id="nightSky"
-    layers="4"
-    density="30"
-    velocity="60"
-    starcolor="#FFF" >
+      <Container >
 
         <Sun />
 

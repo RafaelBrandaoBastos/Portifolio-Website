@@ -4,9 +4,9 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    background: linear-gradient(-45deg, #03001C, #1D1919);
+    background: #060326;
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 15s ease infinite;
     justify-content: center;
     align-items: center;
     @keyframes gradient {
@@ -20,4 +20,6 @@ export const Container = styled.div`
             background-position: 0% 50%;
         }
     }
+
+    @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
 `;

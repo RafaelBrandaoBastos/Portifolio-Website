@@ -14,19 +14,18 @@ export const Galaxy  = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
     outline-style: solid;
     outline-color: green;
-
 `;
 
 export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18vw;
-    height: 60%;
+    width: 18%;
+    height: 50%;
     transform: scaleX(5);
     outline-style: solid;
     outline-color: red;
