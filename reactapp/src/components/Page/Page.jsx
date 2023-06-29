@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Container} from "./style";
 import {TabsContext} from "../../contexts/TabsProvider";
 import Home from "../Home/Home";
-import './Page.scss'
+import "./style.scss"
 
 
 

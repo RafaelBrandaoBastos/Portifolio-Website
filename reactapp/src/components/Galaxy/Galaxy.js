@@ -48,6 +48,7 @@ import {
   RouteMoon,
   RouteInnerMoon,
   PlanetContainerMoon,
+  PlanetIndexMoon,
 } from "./style";
 
 const GalaxyComponent = ({}) => {
@@ -80,12 +81,17 @@ const GalaxyComponent = ({}) => {
           <Route3>
             <PlanetContainer3>
                 <PlanetEarth />
-                <RouteInnerMoon />
-                <RouteMoon>
-                    <PlanetContainerMoon>
-                        <Moon/>
-                    </PlanetContainerMoon>
-                </RouteMoon>
+
+                <PlanetIndexMoon>
+                  <RouteInnerMoon />
+                  <RouteMoon>
+                      <PlanetContainerMoon>
+                          <Moon/>
+                      </PlanetContainerMoon>
+                  </RouteMoon>
+                </PlanetIndexMoon>
+
+
             </PlanetContainer3>
           </Route3>
         </PlanetIndex3>

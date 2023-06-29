@@ -370,12 +370,34 @@ export const PlanetEarth = styled.div`
 
 
 
-
+export const PlanetIndexMoon = styled.div`
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: hidePlannet  2s infinite;
+    @keyframes hidePlannet {
+        0% {
+            z-index: -999;
+        }
+        25% {
+            z-index: -999;
+        }
+        85% {
+            z-index: 999;
+        }
+        100% {
+            z-index: -999;
+        }
+    }
+`;
 export const RouteMoon = styled.div`
     width: .9vw;
     height: .9vw;
     position: absolute;
-    animation: rotate 15s infinite linear;
+    animation: rotate 2s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -392,7 +414,7 @@ export const RouteInnerMoon = styled.div`
     height: .5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.2);
     position: absolute;
-    animation: rotate 5s infinite linear;
+    animation: rotate 2s infinite linear;
     @keyframes rotate {
         0% {
             transform: rotateZ(0deg);
@@ -409,7 +431,7 @@ export const PlanetContainerMoon = styled.div`
     position: absolute;
     justify-content: center;
     align-items: center;
-    animation: correct 15s infinite linear;
+    animation: correct 2s infinite linear;
     @keyframes correct {
         0% {
             transform: rotateZ(360deg);
