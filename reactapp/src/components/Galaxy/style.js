@@ -17,7 +17,7 @@ export const Galaxy  = styled.div`
     width: 80%;
     height: 50%;
     outline-style: solid;
-    outline-color: green;
+    outline-color: black;
 `;
 
 export const Container = styled.div`
@@ -27,14 +27,12 @@ export const Container = styled.div`
     width: 18%;
     height: 50%;
     transform: scaleX(5);
-    outline-style: solid;
-    outline-color: red;
 `;
 
 export const Sun = styled.div`
     position: absolute;
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     transform: scaleX(0.2);
     border-radius: 50%;
     background-color: rgb(248, 244, 163);
@@ -73,8 +71,8 @@ export const PlanetIndex = styled.div`
     }
 `;
 export const Route = styled.div`
-    width: 2.3vw;
-    height: 2.3vw;
+    width: 2.8vw;
+    height: 2.8vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -87,8 +85,8 @@ export const Route = styled.div`
 `;
 export const RouteInner = styled.div`
     border-radius: 50%;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 3.2vw;
+    height: 3.2vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     outline-color: white;
     position: absolute;
@@ -181,8 +179,8 @@ export const PlanetIndex2 = styled.div`
     }
 `;
 export const Route2 = styled.div`
-    width: 3.2vw;
-    height: 3.2vw;
+    width: 3.6vw;
+    height: 3.6vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -195,8 +193,8 @@ export const Route2 = styled.div`
 `;
 export const RouteInner2 = styled.div`
     border-radius: 50%;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 4.2vw;
+    height: 4.2vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 6s infinite linear;
@@ -291,8 +289,8 @@ export const PlanetIndex3 = styled.div`
     }
 `;
 export const Route3 = styled.div`
-    width: 4.65vw;
-    height: 4.65vw;
+    width: 5.3vw;
+    height: 5.3vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -305,8 +303,8 @@ export const Route3 = styled.div`
 `;
 export const RouteInner3 = styled.div`
     border-radius: 50%;
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 5.5vw;
+    height: 5.5vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 15s infinite linear;
@@ -496,8 +494,8 @@ export const PlanetIndex4 = styled.div`
 `;
 export const Route4 = styled.div`
     border-radius: 50%;
-    width: 5.4vw;
-    height: 5.4vw;
+    width: 5.9vw;
+    height: 5.9vw;
     animation: rotate 15s infinite linear;
     @keyframes rotate {
         0% {
@@ -510,8 +508,8 @@ export const Route4 = styled.div`
 `;
 export const RouteInner4 = styled.div`
     border-radius: 50%;
-    width: 6vw;
-    height: 6vw;
+    width: 6.6vw;
+    height: 6.6vw;
     border: 1.0px solid rgba(256, 256, 256, 0.3);
     position: absolute;
     animation: rotate 15s infinite linear;

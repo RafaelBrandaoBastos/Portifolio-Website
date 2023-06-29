@@ -86,7 +86,7 @@ html {
   @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration);
 }
 .comet {
-  @include shooting-star-template($numComet, 5px, 10s);
+  @include shooting-star-template($numComet, 5px, 20s);
 }
 
 @keyframes animStar {
@@ -101,14 +101,14 @@ html {
 
 @keyframes animShootingStar {
   from {
-    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    transform: translateY(100%) translateX(100%) rotate(-45deg);
     opacity: 1;
-    height: 5px;
+    height: 1px;
   }
   to {
     transform: translateY(-#{$starFieldHeight}px)
-      translateX(-#{$starFieldWidth}px) rotate(-45deg);
+      translateX(-#{$starFieldWidth}px) rotate(-80deg);
     opacity: 1;
-    height: 800px;
+    height: 500px;
   }
 }
